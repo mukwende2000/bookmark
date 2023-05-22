@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: 231deg 69% 60%;
+  --secondary-color: 0deg 94% 66%;
+  --grayish-blue: 229deg 8% 60%;
+  --dark-blue: 229 31% 21%
+}
+img {
+  max-width: 100%;
+}
+body {
+  line-height: 1.2;
+  font-size: 18px;
+  font-family: Rubik;
+}
+a {
+  display: block;
+}
+p {
+  line-height: 1.5;
+  color: gray;
+}
+h1 {
+  line-height: 1.1;
+  font-size: 3rem;
+  font-weight: 500;
+}
+h2 {
+  line-height: 1.5;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.features {
+  padding-block: 1rem;
+  font-weight: 500;
+}
