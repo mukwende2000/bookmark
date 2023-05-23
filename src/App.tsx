@@ -45,7 +45,6 @@ function App() {
                     <Button secondary text="Get it on Firefox" width='full' />
                   </div>
               </div>
-              {/* <div className='w-full h-[240px] bg-primary rounded-full absolute -z-10 -right-24 top-16' /> */}
             </div>
           </section>
         </header>

@@ -17,7 +17,7 @@ function Extension({title, version, url, alt}:Prop) {
           <h3>{ title }</h3>
           <p> { version} </p>
         </div>
-        <Button text='Add & Install Extension' bg="primary" color="white" width="full" />
+        <Button text='Add & Install Extension' width="full" />
     </div>
   )
 }
