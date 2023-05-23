@@ -14,7 +14,7 @@ function Navbar() {
   useEffect(() => {
     window.addEventListener('resize', handleResize)
     return () => {
-        window.removeEventListener('resize', handleResize)
+      window.removeEventListener('resize', handleResize)
     }
   },[])
 
@@ -25,6 +25,7 @@ function Navbar() {
   function handleClick() {
     setMenuIsOpen(prev => !prev)
   }
+
   return (
     <nav className='py-10'>
       <div className="w-[85%] mx-auto flex justify-between items-center">
@@ -50,12 +51,6 @@ function Navbar() {
             </div>
         </div>
       </div>
-        {/*////////////////////
-        //MY GOAL FOR THIS 
-        //PROJECT IS TO 
-        //UNDERSTAND EVERY
-        //CODE THAT I WRITE
-        ////////////////////*/}
     </nav>
   )
 }

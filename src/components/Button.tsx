@@ -7,7 +7,7 @@ type Props = {
 }
 function Button({color, bg, text, width, customizable}:Props) {
   return (
-    <button className={`bg-${bg} ${customizable ? width : 'w-full'} text-${color} rounded py-4 shadow-lg`}>
+    <button className={`bg-${bg} hover:bg-${color} border-solid border-2 border-${bg} hover:border-${bg} ${customizable ? width : 'w-full'} text-${color} hover:text-${bg} rounded py-4 shadow-lg duration-200`}>
       { text }
     </button>
   )

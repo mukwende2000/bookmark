@@ -1,3 +1,8 @@
+import tab1 from './assets/images/illustration-features-tab-1.svg'
+import tab2 from './assets/images/illustration-features-tab-2.svg'
+import tab3 from './assets/images/illustration-features-tab-3.svg'
+export { tab1, tab2, tab3}
+
 interface Nest {
     heading: string
     text: string
@@ -65,6 +70,7 @@ interface Faq {
     answer: string
     id:number
 }
+
 export const faq: Faq[] = [
     {
         id: 898,
@@ -95,4 +101,14 @@ export const faq: Faq[] = [
     }
 ]
 
+interface Feature {
+    title: string
+    id: string
+}
+
+export const features:Feature[] = [
+    {title: 'Simple Bookmarking', id: tab1}, 
+    {title: 'Speedy Searching', id: tab2}, 
+    {title: 'Easy Sharing', id: tab3}
+]
 export default data

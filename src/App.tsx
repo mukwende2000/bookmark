@@ -4,15 +4,14 @@ import data, { faq } from './data'
 import Navbar from './components/Navbar'
 import Button from './components/Button'
 import Intro from './components/Intro'
-import Extension from './Extension'
-import Faq from './Faq'
-import Cta from './Cta'
+import Extension from './components/Extension'
+import Faq from './components/Faq'
+import Cta from './components/Cta'
 import Footer from './components/Footer'
 
+import {tab1, tab2, tab3, features} from './data'
+
 import illustration from './assets/images/illustration-hero.svg'
-import tab1 from './assets/images/illustration-features-tab-1.svg'
-import tab2 from './assets/images/illustration-features-tab-2.svg'
-import tab3 from './assets/images/illustration-features-tab-3.svg'
 import google_logo from './assets/images/logo-chrome.svg'
 import firefox_logo from './assets/images/logo-firefox.svg'
 import opera_logo from './assets/images/logo-opera.svg'
@@ -21,15 +20,7 @@ import arrow from './assets/images/icon-arrow.svg'
 function App() {
   const [active, setActive] = useState(tab1)
   const [isOpen, setIsOpen] = useState<number>(898)
-  interface Feature {
-    title: string
-    id: string
-  }
-  const features:Feature[] = [
-    {title: 'Simple Bookmarking', id: tab1}, 
-    {title: 'Speedy Searching', id: tab2}, 
-    {title: 'Easy Sharing', id: tab3}
-  ]
+
 
   function activate (id: string) {
     setActive(id)
@@ -113,12 +104,6 @@ function App() {
             <Cta />
             <Footer />
         </main>
-      {/*////////////////////
-      //MY GOAL FOR THIS 
-      //PROJECT IS TO 
-      //UNDERSTAND EVERY
-      //CODE THAT I WRITE
-      ////////////////////*/}
       </div>
     </BrowserRouter>
   )

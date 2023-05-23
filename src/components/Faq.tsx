@@ -10,7 +10,7 @@ type Props = {
 }
 function Faq({ question, arrow, answer, isOpen, id, handleClick}:Props) {
   return (
-    <div onClick={handleClick} className="border-b border-b-gray py-5 text-left max-w-[500px] mx-auto">
+    <div onClick={handleClick} className="cursor-pointer border-b border-b-gray py-5 text-left max-w-[500px] mx-auto">
       <div className="flex justify-between">
         <p className="text-black">{ question }</p>
         <img src={arrow} alt="" className={`object-contain ${isOpen === id ? 'invert rotate-180' : null}`} />

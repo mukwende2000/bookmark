@@ -1,5 +1,5 @@
 import { FormEvent, useState } from 'react'
-import Button from './components/Button'
+import Button from './Button'
 
 function Cta() {
   const [error, setError] = useState<string>('')
