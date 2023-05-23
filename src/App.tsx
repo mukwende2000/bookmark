@@ -42,7 +42,7 @@ function App() {
                   <Intro isHero text={data.hero.text} heading={data.hero.heading} />
                   <div className='flex gap-5'>
                     <Button text="Get it on Chrome" color="white" bg="primary" width='full' />
-                    <Button text="Get it on Firefox" color="gray-800" bg="gray-200" width='full' />
+                    <Button text="Get it on Firefox" color="white" bg="secondary" width='full' />
                   </div>
               </div>
               {/* <div className='w-full h-[240px] bg-primary rounded-full absolute -z-10 -right-24 top-16' /> */}
