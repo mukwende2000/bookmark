@@ -40,7 +40,7 @@ function Cta() {
                 <input type="email" onChange={(e) => setEmail(e.target.value)} className='px-5 text-black rounded-md w-full h-14' placeholder='Enter Your Email'/>
                 <p>{ error }</p>
               </div>
-              <Button customizable bg="secondary" text="Contact Us" color="white" width="w-full md:w-[30%]" />
+              <Button secondary customizable text="Contact Us" width="w-full md:w-[30%]" />
             </form>
           </div>
         </div>

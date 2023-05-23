@@ -1,13 +1,12 @@
 type Props = {
   customizable?: boolean
   text: string
-  bg: string
   width: string
-  color: string
+  secondary?: boolean
 }
-function Button({color, bg, text, width, customizable}:Props) {
+function Button({text, width, customizable, secondary}:Props) {
   return (
-    <button className={`bg-${bg} hover:bg-${color} border-solid border-2 border-${bg} hover:border-${bg} ${customizable ? width : 'w-full'} text-${color} hover:text-${bg} rounded py-4 shadow-lg duration-200`}>
+    <button className={`${secondary ? 'secondary' : 'primary'} border-solid border-2 ${customizable ? width : 'w-full'}  rounded py-4 shadow-lg duration-200`}>
       { text }
     </button>
   )

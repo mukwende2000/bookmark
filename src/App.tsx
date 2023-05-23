@@ -41,8 +41,8 @@ function App() {
               <div className='max-w-[500px]'>
                   <Intro isHero text={data.hero.text} heading={data.hero.heading} />
                   <div className='flex gap-5'>
-                    <Button text="Get it on Chrome" color="white" bg="primary" width='full' />
-                    <Button text="Get it on Firefox" color="white" bg="secondary" width='full' />
+                    <Button text="Get it on Chrome" width='full' />
+                    <Button secondary text="Get it on Firefox" width='full' />
                   </div>
               </div>
               {/* <div className='w-full h-[240px] bg-primary rounded-full absolute -z-10 -right-24 top-16' /> */}
@@ -72,7 +72,7 @@ function App() {
                         {active === tab2 && <Intro isSubIntro text={data.features.intelligent?.text} heading={data.features.intelligent?.heading} /> }
 
                         {active === tab3 && <Intro isSubIntro text={data.features.share?.text}  heading={data.features.share?.heading} /> }
-                        <Button customizable text="More Info" color="white" width='w-full md:w-[50%]' bg="primary" />
+                        <Button customizable text="More Info" width='w-full md:w-[50%]' />
                     </div>
                   </div>
                 </div>
@@ -98,7 +98,7 @@ function App() {
                       return <Faq key={question.id} id={question.id} question={question.question} answer={question.answer} arrow={arrow} isOpen={isOpen} handleClick={() => handleClick(question.id)} />
                     })}
                    </div>
-                   <Button customizable text='More Info' width="w-[50%]" bg="primary" color="white" />
+                   <Button customizable text='More Info' width="w-[50%]" />
               </div>
             </section>
             <Cta />

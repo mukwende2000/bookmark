@@ -8,6 +8,26 @@
   --grayish-blue: 229deg 8% 60%;
   --dark-blue: 229 31% 21%
 }
+
+.primary {
+  color: white;
+  background-color: hsl(231, 69%, 60%);
+  border: 2px solid hsl(231, 69%, 60%);
+}
+.primary:hover {
+  color: hsl(231, 69%, 60%);
+  background-color: white;
+}
+.secondary {
+  color: white;
+  background-color: hsl(0, 94%, 66%);
+  border: 2px solid hsl(0, 94%, 66%);
+}
+.secondary:hover {
+  color: hsl(0, 94%, 66%);
+  background-color: white;
+}
+
 img {
   max-width: 100%;
 }
